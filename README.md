@@ -42,14 +42,14 @@ The Flood Monitoring System is designed to provide real-time monitoring and aler
 ### Screen shots
 
 *CLient side*
-![Screenshot 2024-06-19 185108](https://github.com/FOCUS-fun-projects/Foold-warning-system/assets/146844863/f1b1edfc-f1b4-4d27-a6fc-c6faf8ddb74a)
-![Screenshot 2024-06-19 185535](https://github.com/FOCUS-fun-projects/Foold-warning-system/assets/146844863/4ed5d858-9615-4726-a9e0-9f0f1fb7794a)
-
+![Screenshot 2024-06-19 185517](https://github.com/FOCUS-fun-projects/Foold-warning-system/assets/146844863/f276c422-d485-42cc-9f14-294da0b1bca8)
+![Screenshot 2024-06-19 185535](https://github.com/FOCUS-fun-projects/Foold-warning-system/assets/146844863/544db08d-c542-45d9-97be-394f5945b793)
 
 *Admin side*
-![Screenshot 2024-06-19 185517](https://github.com/FOCUS-fun-projects/Foold-warning-system/assets/146844863/4578f151-0f82-4b9b-a6d6-706c5148c1e8)
-![Screenshot 2024-06-19 185428](https://github.com/FOCUS-fun-projects/Foold-warning-system/assets/146844863/1ed5bacf-f46e-4c5f-9edb-5464ec321e41)
-![Screenshot 2024-06-19 185409](https://github.com/FOCUS-fun-projects/Foold-warning-system/assets/146844863/1e35ffce-cf58-4e3f-aa07-af4b1371bedf)
+![Screenshot 2024-06-19 185108](https://github.com/FOCUS-fun-projects/Foold-warning-system/assets/146844863/617b474e-694e-4edc-bf5b-d8f4c92df344)
+![Screenshot 2024-06-19 185428](https://github.com/FOCUS-fun-projects/Foold-warning-system/assets/146844863/4dc68d3e-86e5-48a3-aa5f-9b502cb164f0)
+![Screenshot 2024-06-19 185409](https://github.com/FOCUS-fun-projects/Foold-warning-system/assets/146844863/f6ad1e9f-da06-478a-a1dc-f898eb879b44)
+
 
 
 
