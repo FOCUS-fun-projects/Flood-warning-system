@@ -1,0 +1,655 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalnia:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT Serif:wght@500&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    /* font-family: 'PT Serif', sans-serif; */
+}
+
+
+body{
+    min-height: 100vh;
+    background-color: rgb(17, 17, 19);
+    background-size: cover;
+    background-position: center;
+    color: aliceblue;
+    background-image: linear-gradient(rgba(4, 12, 40, 0.7), rgba(4, 12, 40, 0.7)), url(../imeges/dashboard/background/thunderback.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+}
+
+
+/* ################################section 01 ##################################### */
+.section01{
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom, rgba(9, 105, 214, 0.4), rgba(11, 11, 110, 0.4));
+    position: sticky;
+    top: 0;
+    z-index: 1300;
+}
+.sec1title{
+    height: 4rem;
+    width: 33.33%;
+}
+
+.section01 h1{
+    line-height: 4rem;
+    text-align: center;
+    color: aliceblue;
+    font-size: 30px;
+    font-family: 'Kalnia', sans-serif;
+}
+.sec1title label{
+    margin: 0 0 0 6rem;
+    font-weight: 400;
+    font-size: 17px;
+}
+
+.sec1title select{
+    height: 2rem;
+    width: 12rem;
+    margin: 1rem 50px 0 1rem;
+    padding: 5px 15px;
+    font-size: 15px;
+    background-color: rgba(255, 255, 255, 0.149);
+    border-radius: 8px;
+    border: 3px solid rgba(22, 85, 244, 0.263);
+    color: rgba(255, 255, 255, 0.9);
+}
+
+#location option {
+    background-color: rgba(15, 45, 122, 0.811);
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* ############################# section 05 ################################ */
+.section05{
+    display: flex;
+    margin: 3% auto;
+    /* position: relative; */
+    width: 85%;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+    /* ############################# subscribers section ################################ */
+    .subscribers {
+        border-radius:0.8rem;
+        margin: 0 10px 0 0;
+        width: 60%;
+        height: 50vh;
+        backdrop-filter: blur(7px);
+        overflow: hidden;
+        
+        background-color: rgba(251, 251, 251, 0.1);
+        box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15);
+    }
+    .subscribers_header{
+        width: 100%;
+        height: 15%;
+        color: white;
+        background-color: rgba(251, 251, 251, 0.1);
+        padding: 1rem 1rem; 
+    }
+
+    .subscribers_table{
+        color: white;
+        width: auto;
+        height: 85%; 
+        background-color: rgba(251, 251, 251, 0.1);
+
+        overflow: auto;
+        font-family: Calibri, 'Trebuchet MS', sans-serif;
+        text-align: center;
+    }
+   
+    .subscribers_table::-webkit-scrollbar{
+        width: 0.5rem;
+        height: 0.5rem;
+    }
+    .subscribers_table::-webkit-scrollbar-thumb{
+        border-radius: 0.5rem;
+        background-color: #0004;
+        visibility: hidden;
+    }
+    .subscribers_table:hover::-webkit-scrollbar-thumb{
+        visibility: visible;
+    }
+    .subscribers_table table,
+    .subscribers_table table th,
+    .subscribers_table table td{
+        padding: 12px;
+        border-collapse: collapse;
+    }
+    .subscribers_table table{
+        width: 100%;
+    }
+    .subscribers_table thead th{
+        position: sticky;
+        top: 0;
+        left: 0;
+        background-color: rgba(251, 251, 251, 0.1);
+        font-size: 18px;
+    }
+    .subscribers_table thead th select{
+        background-color: rgba(251, 251, 251, 0.1);
+        border-radius: 10px ;
+        border: solid rgba(251, 251, 251, 0.1);
+        padding: 2px;
+        width: 85px;  
+        color: white;
+    }
+    .subscribers_table thead th select option{
+        color: rgba(0, 0, 0, 0.9);
+        background-color: rgba(251, 251, 251, 0.1);
+        border-color:  rgba(251, 251, 251, 0.1);
+    }
+    .subscribers_table tbody tr:nth-child(even){
+        background-color: #0000000b;
+    }
+    .subscribers_table tbody tr:hover{
+        background-color: rgba(251, 251, 251, 0.2);
+    }
+    .villageclass{
+        display: none;
+    }
+    .villageclass.active{
+        display: block;
+    }
+
+    /* ############################# Notification section ################################ */
+    .notification_status {
+        border-radius:0.8rem;
+        margin: 0 10px 0 0;
+        width: 40%;
+        height: 50vh;
+        backdrop-filter: blur(7px);
+        overflow: hidden;
+        
+        background-color: rgba(251, 251, 251, 0.1);
+        box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15);
+    }
+    .notification_header{
+        width: 100%;
+        height: 15%;
+        background-color: rgba(251, 251, 251, 0.1);
+        padding: 1rem 1rem;
+        color: white;
+    }
+    .notification_table{
+        color: white;
+        width: auto;
+        height: 85%; 
+        background-color: rgba(251, 251, 251, 0.1);
+        overflow: auto;
+        font-family: Calibri, 'Trebuchet MS', sans-serif;
+        text-align: center;
+    }
+
+    .notification_table::-webkit-scrollbar{
+        width: 0.5rem;
+        height: 0.5rem;
+    }
+    .notification_table::-webkit-scrollbar-thumb{
+        border-radius: 0.5rem;
+        background-color: #0004;
+        visibility: hidden;
+    }
+    .notification_table:hover::-webkit-scrollbar-thumb{
+        visibility: visible;
+    }
+    .notification_table table,
+    .notification_table table th,
+    .notification_table table td{
+        padding: 12px;
+        border-collapse: collapse;
+    }
+    .notification_table table{
+        width: 100%;
+    }
+    .notification_table thead th{
+        position: sticky;
+        top: 0;
+        left: 0;
+        background-color: rgba(251, 251, 251, 0.1);
+        font-size: 18px;
+    }
+    .notification_table thead th select{
+        background-color: rgba(251, 251, 251, 0.1);
+        border-radius: 10px ;
+        border: solid rgba(251, 251, 251, 0.1);
+        padding: 2px;
+        width: 80px;
+        
+    }
+    .notification_table tbody tr:nth-child(even){
+        background-color: #0000000b;
+    }
+    .notification_table tbody tr:hover{
+        background-color: rgba(251, 251, 251, 0.2);
+    }
+
+    .notification_table tbody tr .status{
+        width: 100px;
+        height: 20px;
+        border-radius: 1rem;
+        padding: 2px;
+        
+    }
+
+
+/* ###################### SECTION 02 ############################ */
+
+.section02{
+    margin-top: 2%;
+    width: 100%;
+}
+
+.detailrow{
+    margin: 0 auto;
+    position: relative;
+    width: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.detailcol{
+    height: 12rem;
+    width: 23%;
+    border-radius: 10px;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+    background-color: rgba(251, 251, 251, 0.1);
+    box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15);
+}
+
+.detailcol h3{
+    font-size: 20px;
+}
+
+/* ################### humidity #################### */
+
+.humcol{
+    margin: 20px auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+
+#humidity{
+    background-image: linear-gradient(rgba(4, 12, 40, 0.7), rgba(4, 12, 40, 0.7)), url(imeges/dashboard/sunny.jpg);
+}
+
+.humcol .humimg{
+    width: 45%;
+}
+
+.humcol .humimg img{
+    margin-left: 15px;
+    width: 80px;
+    height: 80px;
+}
+
+.humcol .humimg h1{
+    font-size: 32px;
+}
+
+.humcol .humimg p{
+    font-size: 16px;
+}
+
+.humidityimage{
+    display: block;
+}
+
+/* ################### temp #################### */
+
+.tempval h1{
+    font-size: 32px;
+    margin: 10px 0px 0px 20px;
+}
+
+.tempval p{
+    font-size: 16px;
+    margin: 0px 0px 10px 20px;
+}
+
+.skill{
+    width: 115px;
+    height: 115px;
+    position: relative;
+}
+
+.outer{
+    height: 115px;
+    width: 115px;
+    border-radius: 50%;
+    padding: 20px;
+    box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+                -6px -6px 10px -1px rgba(251, 251, 251, 0.144);
+}
+
+.inner{
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2),
+                inset -4px -4px 6px -1px rgba(251, 251, 251, 0.144),
+                -0.5px -0.5px 0px rgba(251, 251, 251, 0.144),
+                0.5px 0.5px 0px rgba(0,0,0,0.15),
+                0px 12px 10px -10px rgba(0,0,0,0.05);
+}
+
+#number{
+    font-weight: 600;
+    color: aliceblue;
+}
+
+.tmpcol{
+    margin: 10px auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+
+circle{
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 21px;
+    stroke-dasharray: 300;
+    animation: anim 2s linear forwards;
+}
+
+svg{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* ################### rain #################### */
+
+.raindetail{
+    margin: 20px auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+}
+
+.raindetail .raindetailcol h1{
+    font-size: 32px;
+    margin: 10px 0px 0px 20px;
+}
+
+.raindetail .raindetailcol p{
+    font-size: 16px;
+    margin: 0px 0px 10px 20px;
+}
+
+.rain{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.rain i{
+    position: absolute;
+    height: 25px;
+    background: linear-gradient(transparent, #fff);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    animation: rainanimate 5s linear infinite;
+}
+
+.rain i:nth-child(3n+1){
+    background: linear-gradient(transparent, rgb(0, 115, 255));
+}
+.rain i:nth-child(3n+2){
+    background: linear-gradient(transparent, rgb(47, 0, 255));
+}
+.rain i:nth-child(3n+3){
+    background: linear-gradient(transparent, rgb(5, 185, 221));
+}
+
+@keyframes rainanimate{
+    0%{
+        transform: translateY(-150px);
+    }
+    100%{
+        transform: translateY(calc(10rem + 20px));
+    }
+}
+
+/* ################### water #################### */
+
+.waterdetail{
+    margin: 20px auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.waterdetail .waterdetailcol h1{
+    font-size: 32px;
+    margin: 10px 0px 0px 20px;
+}
+
+.waterdetail .waterdetailcol p{
+    font-size: 16px;
+    margin: 0px 0px 10px 20px;
+}
+
+.detailcol .wave{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/85486/wave.svg);
+    background-size: 1000px 100px;
+}
+
+.detailcol .wave.wave1{
+    animation: animate 30s linear infinite;
+    z-index: 1000;
+    opacity: 1;
+    animation-delay: 0s;
+    bottom: 0;
+}
+
+.detailcol .wave.wave2{
+    animation: animate2 15s linear infinite;
+    z-index: 999;
+    opacity: 0.5;
+    animation-delay: -5s;
+    bottom: 5px;
+}
+
+.detailcol .wave.wave3{
+    animation: animate 30s linear infinite;
+    z-index: 998;
+    opacity: 0.2;
+    animation-delay: -2s;
+    bottom: 8px;
+}
+
+.detailcol .wave.wave4{
+    animation: animate 5s linear infinite;
+    z-index: 997;
+    opacity: 0.7;
+    animation-delay: -5s;
+    bottom: 10px;
+}
+
+@keyframes animate {
+    0%{
+        background-position-x: 0;
+    }            
+    100%{
+        background-position-x: 1000px;
+    }
+}
+@keyframes animate2 {
+    0%{
+        background-position-x: 0;
+    }            
+    100%{
+        background-position-x: -1000px;
+    }
+}
+
+/* ################### water #################### */
+
+.section03{
+    width: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 3% auto;
+}
+
+.section03 .subcon{
+    border-radius: 10px;
+    position: relative;
+    width: 48.5%;
+    height: 22rem;
+}
+
+.subcon h3{
+    font-size: 20px;
+}
+
+.subcon .maptitle{
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    height: 2.5rem;
+    padding: 11px 20px;
+    width: 100%;
+    position: absolute;
+    z-index: 1100;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.2));
+}
+
+.subcon #map{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15);
+}
+
+#waterchart{
+    background-color: rgba(251, 251, 251, 0.1);
+    box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15);
+    padding: 20px;
+}
+
+/* ################### history #################### */
+
+.section04{
+    width: 85%;
+    margin: 3% auto;
+    border-radius: 10px;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+    background-color: rgba(251, 251, 251, 0.1);
+    box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15);
+}
+
+.section04 .historytable{
+    width: 97%;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+.historytable, th, td{
+    border-spacing: 4px;
+    text-align: center;
+}
+
+.historytable th{
+    background-color: rgb(164, 189, 216);
+    border-top-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+    color: black;
+    font-size: 17px;
+}
+
+.historytable td{
+    background: linear-gradient(to bottom, rgba(9, 105, 214, 0.1), rgba(11, 11, 110, 0.1));
+}
+
+.historytable tr{
+    height: 35px;
+}
+
+/* ######################################## section 06 ####################################### */
+
+.section06{
+    /* height: 100vh; */
+    width: 85%;
+    margin: 3% auto;
+    border-radius: 10px;
+    padding: 0 20px 20px 20px 20px;
+    position: relative;
+    overflow: hidden;
+    background-color: rgba(251, 251, 251, 0.1);
+    box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15);
+}
+.averagechart_header{
+    width: 100%;
+    height: 15%;
+    color: white;
+    background-color: #fff4;
+    padding: 1rem 1rem;
+}
+.averagechart{
+    height: 75%;
+    margin: 20px;
+    padding: 20px;
+    /* background-color: rgba(255, 255, 255, 0.349); */
+    border-radius: .6rem;
+    overflow: auto;
+}
+
+/* ################### footer #################### */
+
+.footer{
+    width: 100%;
+    height: 4rem;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.footer p{
+    color: aliceblue;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 4rem;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    font-family: 'PT Serif', sans-serif;
+}

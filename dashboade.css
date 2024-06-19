@@ -1,0 +1,493 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT Serif:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalnia:wght@500&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'PT Serif', sans-serif;
+}
+
+body{
+    /* background: linear-gradient(to top right, rgb(21, 84, 147), rgb(8, 56, 100)); */
+    background-size: cover;
+    background-position: center;
+    color: aliceblue;
+    background-image: linear-gradient(rgba(4, 12, 40, 0.7), rgba(4, 12, 40, 0.7)), url(imeges/dashboard/background/thunderback.jpg);
+}
+
+/* ###################### SECTION 01 ############################ */
+
+.section01{
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(to bottom, rgba(9, 105, 214, 0.4), rgba(11, 11, 110, 0.4));
+    position: sticky;
+    top: 0;
+    z-index: 1300;
+}
+
+.section01.opaque {
+    background: linear-gradient(to bottom, rgb(16, 81, 155), rgb(10, 10, 122));
+}
+
+.sec1title{
+    height: 4rem;
+}
+
+.sec1title:nth-child(1){
+    width: 40%;
+}
+
+.sec1title:nth-child(2){
+    width: 40%;
+}
+
+.sec1title:nth-child(3){
+    width: 20%;
+}
+
+.section01 h1{
+    line-height: 4rem;
+    margin-left: 1rem ;
+    font-size: 28px;
+    font-family: 'Kalnia', sans-serif;
+}
+
+.sec1title label{
+    margin: 0 0 0 4rem;
+    font-weight: 400;
+    font-size: 17px;
+}
+
+.sec1title select{
+    height: 2rem;
+    width: 30%;
+    margin: 1rem 50px 0 0.5rem;
+    padding: 5px 15px;
+    font-size: 15px;
+    background-color: rgba(255, 255, 255, 0.149);
+    border-radius: 8px;
+    border: 3px solid rgba(22, 85, 244, 0.263);
+    color: rgba(255, 255, 255, 0.9);
+}
+
+#location option {
+    background-color: rgba(15, 45, 122, 0.811);
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.sec1title button{
+    height: 2.2rem;
+    float: right;
+    margin: 0.7rem 4rem;
+    padding: 5px 15px;
+    border-radius: 30px;
+    background: linear-gradient(to right, rgb(157, 24, 9), rgb(185, 49, 34));
+    border: none;
+}
+
+.sec1title button a{
+    cursor: pointer;
+    font-size: 16px;
+    color: rgb(241, 233, 233);
+    font-weight: 400;
+}
+
+@keyframes shake {
+    0% {
+        transform: translateX(0);
+    }
+    40% {
+        transform: translateX(10px);
+    }
+    100% {
+        transform: translateX(-10px);
+    }
+}
+
+.shake-animation {
+    animation: shake 0.2s infinite;
+}
+
+/* ###################### SECTION 02 ############################ */
+
+.section02{
+    margin-top: 2%;
+    width: 100%;
+}
+
+.detailrow{
+    margin: 0 auto;
+    position: relative;
+    width: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.detailcol{
+    height: 12rem;
+    width: 23%;
+    border-radius: 10px;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+    background-color: rgba(251, 251, 251, 0.1);
+    box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15);
+}
+
+.detailcol h3{
+    font-size: 20px;
+}
+
+/* ################### humidity #################### */
+
+.humcol{
+    margin: 20px auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+
+#humidity{
+    background-image: linear-gradient(rgba(4, 12, 40, 0.7), rgba(4, 12, 40, 0.7)), url(imeges/dashboard/sunny.jpg);
+}
+
+.humcol .humimg{
+    width: 45%;
+}
+
+.humcol .humimg img{
+    margin-left: 15px;
+    width: 80px;
+    height: 80px;
+}
+
+.humcol .humimg h1{
+    font-size: 32px;
+}
+
+.humcol .humimg p{
+    font-size: 16px;
+}
+
+.humidityimage{
+    display: block;
+}
+
+/* ################### temp #################### */
+
+.tempval h1{
+    font-size: 32px;
+    margin: 10px 0px 0px 20px;
+}
+
+.tempval p{
+    font-size: 16px;
+    margin: 0px 0px 10px 20px;
+}
+
+.skill{
+    width: 115px;
+    height: 115px;
+    position: relative;
+}
+
+.outer{
+    height: 115px;
+    width: 115px;
+    border-radius: 50%;
+    padding: 20px;
+    box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+                -6px -6px 10px -1px rgba(251, 251, 251, 0.144);
+}
+
+.inner{
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2),
+                inset -4px -4px 6px -1px rgba(251, 251, 251, 0.144),
+                -0.5px -0.5px 0px rgba(251, 251, 251, 0.144),
+                0.5px 0.5px 0px rgba(0,0,0,0.15),
+                0px 12px 10px -10px rgba(0,0,0,0.05);
+}
+
+#number{
+    font-weight: 600;
+    color: aliceblue;
+}
+
+.tmpcol{
+    margin: 10px auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+
+circle{
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 21px;
+    stroke-dasharray: 300;
+    animation: anim 2s linear forwards;
+}
+
+svg{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* ################### rain #################### */
+
+.raindetail{
+    margin: 20px auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+}
+
+.raindetail .raindetailcol h1{
+    font-size: 32px;
+    margin: 10px 0px 0px 20px;
+}
+
+.raindetail .raindetailcol p{
+    font-size: 16px;
+    margin: 0px 0px 10px 20px;
+}
+
+.rain{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.rain i{
+    position: absolute;
+    height: 25px;
+    background: linear-gradient(transparent, #fff);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    animation: rainanimate 5s linear infinite;
+}
+
+.rain i:nth-child(3n+1){
+    background: linear-gradient(transparent, rgb(0, 115, 255));
+}
+.rain i:nth-child(3n+2){
+    background: linear-gradient(transparent, rgb(47, 0, 255));
+}
+.rain i:nth-child(3n+3){
+    background: linear-gradient(transparent, rgb(5, 185, 221));
+}
+
+@keyframes rainanimate{
+    0%{
+        transform: translateY(-150px);
+    }
+    100%{
+        transform: translateY(calc(10rem + 20px));
+    }
+}
+
+/* ################### water #################### */
+
+.waterdetail{
+    margin: 20px auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.waterdetail .waterdetailcol h1{
+    font-size: 32px;
+    margin: 10px 0px 0px 20px;
+}
+
+.waterdetail .waterdetailcol p{
+    font-size: 16px;
+    margin: 0px 0px 10px 20px;
+}
+
+.detailcol .wave{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/85486/wave.svg);
+    background-size: 1000px 100px;
+}
+
+.detailcol .wave.wave1{
+    animation: animate 30s linear infinite;
+    z-index: 1000;
+    opacity: 1;
+    animation-delay: 0s;
+    bottom: 0;
+}
+
+.detailcol .wave.wave2{
+    animation: animate2 15s linear infinite;
+    z-index: 999;
+    opacity: 0.5;
+    animation-delay: -5s;
+    bottom: 05px;
+}
+
+.detailcol .wave.wave3{
+    animation: animate 30s linear infinite;
+    z-index: 998;
+    opacity: 0.2;
+    animation-delay: -2s;
+    bottom: 10px;
+}
+
+.detailcol .wave.wave4{
+    animation: animate 5s linear infinite;
+    z-index: 997;
+    opacity: 0.7;
+    animation-delay: -5s;
+    bottom: 8px;
+}
+
+@keyframes animate {
+    0%{
+        background-position-x: 0;
+    }            
+    100%{
+        background-position-x: 1000px;
+    }
+}
+@keyframes animate2 {
+    0%{
+        background-position-x: 0;
+    }            
+    100%{
+        background-position-x: -1000px;
+    }
+}
+
+/* ################### water #################### */
+
+.section03{
+    width: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 3% auto;
+}
+
+.section03 .subcon{
+    border-radius: 10px;
+    position: relative;
+    width: 48.5%;
+    height: 22rem;
+}
+
+.subcon h3{
+    font-size: 20px;
+}
+
+.subcon .maptitle{
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    height: 2.5rem;
+    padding: 11px 20px;
+    width: 100%;
+    position: absolute;
+    z-index: 1100;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.2));
+}
+
+.subcon #map{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15);
+}
+
+#waterchart{
+    background-color: rgba(251, 251, 251, 0.1);
+    box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15);
+    padding: 20px;
+}
+
+/* ################### history #################### */
+
+.section04{
+    width: 85%;
+    margin: 3% auto;
+    border-radius: 10px;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+    background-color: rgba(251, 251, 251, 0.1);
+    box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15);
+}
+
+.section04 .historytable{
+    width: 97%;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+.historytable, th, td{
+    border-spacing: 4px;
+    text-align: center;
+}
+
+th{
+    background-color: rgb(164, 189, 216);
+    border-top-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+    color: black;
+    font-size: 17px;
+}
+
+td{
+    background: linear-gradient(to bottom, rgba(9, 105, 214, 0.1), rgba(11, 11, 110, 0.1));
+}
+
+.historytable tr{
+    height: 35px;
+}
+
+/* ################### footer #################### */
+
+.footer{
+    width: 100%;
+    height: 4rem;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.footer p{
+    color: aliceblue;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 4rem;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    font-family: 'PT Serif', sans-serif;
+}

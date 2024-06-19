@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=PT Serif:wght@500&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'PT Serif', sans-serif;  
+}
+
+/* ####################### FORM ####################### */
+
+#section01f{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+    z-index: 1500;
+}
+
+#section01f .form{
+    width: 35%;
+    align-items: center;  
+    border-radius: 1.5rem;
+    background-color: rgba(188, 187, 255, 0.701);
+    margin: 3% auto;
+    padding: 2% 4%;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+}
+
+.form .btn-close{
+    color: rgb(231, 217, 217);
+    float: right;
+    font-size: 35px;
+    background: none;
+    border: none;
+}
+
+.form h2{
+    text-align: center;
+    color: rgb(238, 231, 231);
+    font-size: 22px;
+    margin: 6% auto;
+}
+
+.form .inputbox{
+    position: relative;
+    height: 35px;
+    margin: 10px 0 30px 0;
+}
+
+.form .inputboxsub{
+    position: relative;
+    height: 40px;
+    margin: 10px 0 30px 0;
+}
+
+.form .textbox{
+    position: relative;
+    margin: 10px 0 30px 0;
+}
+
+.form .oldimg{
+    position: relative;
+    margin: 10px 0 0 0;
+    padding: 0;
+}
+
+.form .oldimg img{
+    width: 80px;
+    height: 80px;
+}
+
+.form .oldimg p{
+    color: black;
+    display: inline;
+    position: absolute;
+    top: 40%;
+    padding-left: 20px;
+    font-size: 14px;
+}
+
+.inputbox input, 
+.textbox textarea,
+.inputbox select{
+    height: 100%;
+    width:100%;
+    background-color: white;
+    border-radius: 6px;
+    outline: none;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 0 0 0 16px;
+    border: 2px solid #a6a6a6;
+}
+
+.inputbox option{
+    font-size: 14px;
+}
+
+.form label{
+    font-size: 17px;
+    font-weight: 600;
+    color: rgb(238, 231, 231);
+}
+
+.village{
+    position: relative;
+    height: 85px;
+    margin: 10px 0 20px 0;
+    padding: 20px 0 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.station{
+    width: 47%;
+}
+
+.inputbox input[type=file]{
+    padding: 9px;
+}
+
+.inputbox input[type=file]::file-selector-button {
+    height: 100%;
+    float: right;
+    border: none;
+    background: transparent;
+    border-radius: 5px;
+    color: blue;
+    cursor: pointer;
+}
+
+.inputbox input:focus,
+.textbox textarea:focus,
+.inputbox select:focus{
+    border: 3px solid #00ff08;
+    transition: all 0.3s ease;
+}
+
+input[type=submit],
+input[type=reset]{
+    padding: 10px;
+    width: 23%;
+    border-radius: 0.5rem;
+    font-size: 15px;
+    margin: 15px 0 15px 20px;
+    float: right;
+}
+
+input[type=submit]{
+    background-color: rgba(255, 42, 0, 0.908);
+    border: 2px solid rgb(185, 7, 7);
+    color: aliceblue;
+}
+
+input[type=submit]:hover{
+    background-color: rgb(248, 61, 28);
+    border-color: rgb(248, 105, 28);
+    color: white;
+    font-size: 16px;
+}
+
+input[type=reset]{
+    background-color: rgba(255, 255, 255, 0.6);
+    border: 2px solid rgba(255, 255, 255, 0.6);
+}
+
+input[type=reset]:hover{
+    background-color: rgba(255, 157, 0, 0.8);
+    border-color: rgb(255, 100, 0);
+    color: white;
+}
+
+/* ####################### MOBILE VIWE ####################### */
+
+@media(max-width: 900px){
+    .header img{
+        display: none;
+    }
+
+    .section01 .form{
+        width: 75%;
+        margin-top: 9%;
+    }
+
+    .header .title{
+        font-size: 0.8em;
+        padding: 0 10px;
+        line-height: 5rem;
+    }
+
+    .plussblue{
+        color: #134273;
+    }
+
+    .plussred{
+        color: #c32333;
+    }
+
+    .form h2{
+        font-size: 26px;
+    }
+
+    input[type=submit],
+    input[type=reset]{
+        width: 30%;
+    }
+}
+
+@media(max-width: 700px){
+    header{
+        height: 5rem;
+    }
+
+    #section01f .form{
+        width: 85%;
+        margin-top: 9%;
+    }
+
+    .form h2{
+        font-size: 25px;
+    }
+
+    .form label{
+        font-size: 15px;
+    }
+
+    .inputbox input, 
+    .textbox textarea,
+    .inputbox select{
+        font-size: 14px;
+    }
+}

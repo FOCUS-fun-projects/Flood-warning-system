@@ -1,0 +1,28 @@
+<?php
+$hostname = "localhost";
+$username = "root";
+$password = "";
+$database = "sensor_db";
+$port = 3310;
+
+$conn = mysqli_connect($hostname, $username, $password, $database, $port);
+
+if (!$conn) {
+    die("Connection failed: " . mysqli_connect_error());
+}
+
+//getting data from subscriber table 
+$sql = "SELECT id, station , village, status FROM notification_status ORDER BY status DESC";
+$result = mysqli_query($conn, $sql);
+//storing data in an array
+$data = array();
+
+while ($row = mysqli_fetch_assoc($result)) {
+    $data[] = $row;
+}
+//returning response in JSON fromat
+header("Content-Type: application/json");
+echo json_encode($data);
+
+mysqli_close($conn);
+?>
