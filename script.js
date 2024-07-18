@@ -81,7 +81,7 @@ rain();
 
 // ###################################### map #########################################
 
-const apiKey = 'pk.eyJ1IjoiYWxmcmVkMjAxNiIsImEiOiJja2RoMHKyd2wwdnZjMnJ0MTJwbnVmeng5In0.E4QbAFjiWLY8k3AFhDtErA';
+const apiKey = '';
 
 const mymap = L.map('map').setView([6.246626, 80.517881], 12);
 
