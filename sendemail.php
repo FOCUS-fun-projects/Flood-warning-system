@@ -58,8 +58,8 @@
         $mail->SMTPSecure = "tls";
         $mail->Host = 'smtp.gmail.com';
         $mail->Port = 587;
-        $mail->Username = "nilinduwara2001.08.02@gmail.com";
-        $mail->Password = "scahtkcassfoadxh";
+        $mail->Username = "";
+        $mail->Password = "";
         $mail->FromName = "Flood Warning System";
         $mail->AddAddress($email);
         $mail->Subject = "Urgent: Flood Warning in $station";
